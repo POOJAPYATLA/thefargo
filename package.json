@@ -1,0 +1,23 @@
+{
+  "name": "fargo",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "dev": "concurrently \"cross-env NODE_ENV=development postcss ./src/css/*.css -d ./.dist/css/ --watch\" \"cross-env NODE_ENV=development esbuild ./src/js/*.js --outdir=./.dist/js --sourcemap --watch\"",
+    "build": "cross-env NODE_ENV=production postcss ./src/css/*.css -d ./.dist/css/ && cross-env NODE_ENV=production esbuild ./src/js/*.js --outdir=./.dist/js --minify"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "autoprefixer": "^10.4.21",
+    "concurrently": "^9.1.2",
+    "cross-env": "^7.0.3",
+    "cssnano": "^7.0.6",
+    "esbuild": "^0.25.3",
+    "postcss": "^8.5.3",
+    "postcss-cli": "^11.0.1",
+    "tailwindcss": "^3.4.17"
+  }
+}

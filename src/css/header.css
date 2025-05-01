@@ -1,0 +1,45 @@
+.header-container {
+  @apply fixed top-0 left-0 w-full z-40 px-3 py-2;
+}
+.navbar {
+  @apply container mx-auto flex px-4 items-center justify-between;
+}
+.header-logo {
+  @apply max-w-[120px] h-auto;
+}
+.book-btn {
+  @apply font-medium tracking-wide uppercase hover:underline;
+}
+.side-menu-container {
+  @apply fixed top-0 left-0 w-full md:w-80 h-full bg-fargo/95 text-white transform  transition-all duration-300 uppercase z-50;
+}
+.expand-nav {
+  @apply w-[600px] !important;
+}
+.go-to-side {
+  @apply -translate-x-[280px];
+}
+.side-menu-list-container {
+  @apply p-5 h-full flex flex-col overflow-auto;
+}
+.side-menu-logo-container {
+  @apply flex justify-between items-center;
+}
+.menu-close-btn {
+  @apply text-3xl self-start transition-transform duration-300 hover:rotate-90;
+}
+.menu-items {
+  @apply text-[20px] leading-snug block;
+}
+.sub-menu-container {
+  @apply absolute left-[300px] top-0 w-48 pt-0 md:pt-10 transition-transform duration-300 text-white;
+}
+.back-btn {
+  @apply mb-2 md:mb-4 pl-4 text-left w-full;
+}
+.sub-menu-item {
+  @apply px-4 py-1 ;
+}
+.sub-menu-item-heading {
+  @apply my-1 md:my-2 font-semibold text-[20px] uppercase relative after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-16 after:h-[1px] after:bg-white/30;
+}
